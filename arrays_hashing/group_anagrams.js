@@ -13,5 +13,6 @@ function group_anagrams(anagrams, count = [], hash = {}){
     return Object.keys(hash).map(key => hash[key])
 }
 
+//O(m * n)
 
 console.log(group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']))
