@@ -1,5 +1,5 @@
 
-function valid_anagram(word, anagram, store, store1){
+function valid_anagram(word, anagram, store = {}, store1 = {}){
     if (word.length != anagram.length) return false;
 
     for (let i = 0; i < word.length; i++) {
@@ -16,4 +16,4 @@ function valid_anagram(word, anagram, store, store1){
     return true
 }
 
-console.log(valid_anagram('anagram', 'aaangrm', {}, {}))
+console.log(valid_anagram('anagram', 'aaangrm'))

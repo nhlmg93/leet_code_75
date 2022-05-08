@@ -1,7 +1,5 @@
 
-function two_sum(array, target){
-    let prevMap = {}
-
+function two_sum(array, target, prevMap = {}){
     for (let i = 0; i < array.length; i++) {
         const diff = target - array[i]
         if(prevMap[diff])               
