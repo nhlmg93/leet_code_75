@@ -10,7 +10,7 @@ function group_anagrams(anagrams, count = [], hash = {}){
         }
         hash[count] ? hash[count].push(word) : hash[count] = [word]
     }
-    return Object.keys(hash).map(key => hash[key])
+    return Object.keys(hash).map(key => hash[key]) // returning values hash in a list
 }
 
 //O(m * n)
