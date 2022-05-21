@@ -1,4 +1,4 @@
-var productExceptSelf = function (nums = []) {
+function productExceptSelf(nums = []) {
   let prefix = 1;
   let res = []
   for (let i = 0; i < nums.length; i++) {
