@@ -1,0 +1,11 @@
+{
+  "name": "leet_code_75",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nhlmg93/leet_code_75.git",
+  "author": "Nathan Helmig <nhelmig93@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

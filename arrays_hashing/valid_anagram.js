@@ -12,7 +12,7 @@ function valid_anagram(word, anagram, store = {}, store1 = {}){
             return false
         }
     }
-
+    console.log(anagram.length, anagram.size)
     return true
 }
 
