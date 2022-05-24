@@ -4,14 +4,10 @@ function longestConsecutive(nums = []) {
   nums.forEach((num) => {
     if (!memo.has(num - 1)) {
       let currLength = 1;
-      let check = num + 1;
-      while (memo.has(check)) {
+      while (memo.has(num + currLength)) {
         currLength++;
-        check++;
       }
-      if (currLength > res) {
-        res = currLength;
-      }
+      res = Math.max(currLength, res)
     }
   });
   return res;
