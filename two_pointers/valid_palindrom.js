@@ -38,5 +38,4 @@ function valid_palindrom(palindrome) {
   return true;
 }
 
-console.log(valid_palindrom("0P"));
 module.exports = valid_palindrom;
