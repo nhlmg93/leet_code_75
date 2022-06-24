@@ -14,3 +14,8 @@ function longestConsecutive(nums = []) {
 }
 
 console.log(longestConsecutive([1, 2, 3, 4, 100, 87]));
+
+//add all items to a set. Check if the current num - 1 is in set
+//this checks if we are at the start of a seq on a number line.
+//if there isnt then we are at the start of a squence so start counting.
+//save off result to compare with current seq length
