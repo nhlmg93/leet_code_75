@@ -1,4 +1,7 @@
-function top_k_req_elements(nums, k, count = {}, freq=[], res =[]){
+function top_k_req_elements(nums, k){
+    let count = {}
+    let freq=[]
+    let res =[]
     nums.forEach(element => {
         freq.push([])
         count[element] ? count[element] += 1 : count[element] = 1
