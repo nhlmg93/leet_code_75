@@ -6,7 +6,6 @@ function productExceptSelf(nums = []) {
       res[i] = left;
       left = left*nums[i];
   }
-
   for(let i=nums.length-1;i>=0;i--){
       res[i] = right*res[i];
       right = right*nums[i];
