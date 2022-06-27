@@ -1,16 +1,16 @@
 function productExceptSelf(nums = []) {
-  let prefix = 1;
   let res = [];
-  nums.forEach((num) => {
-    res.push(prefix);
-    prefix *= num;
-  });
+  let left = 1;
+  let right = 1;
+  for(let i=0;i<nums.length;i++){
+      res[i] = left;
+      left = left*nums[i];
+  }
 
-  let postfix = 1;
-  nums.reverse().forEach((num, idx) => {
-    res[res.length - 1 - idx] *= postfix;
-    postfix *= num;
-  });
+  for(let i=nums.length-1;i>=0;i--){
+      res[i] = right*res[i];
+      right = right*nums[i];
+   }
   return res;
 }
 
