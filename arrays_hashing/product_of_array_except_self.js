@@ -15,3 +15,12 @@ function productExceptSelf(nums = []) {
 }
 
 console.log(productExceptSelf([1, 2, 3, 4]));
+
+//for the first pass of the nums array we are 
+//inserting into res the left prefix and mult
+//the left prefix by current nums value. 
+//this essentiall multiplies the all the values 
+//in front of the current idx.
+//we then we do the same except we multiply what
+//we have at the idx of the res with the right prefix while
+//looping from end to beginning
