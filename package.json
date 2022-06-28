@@ -1,15 +1,22 @@
 {
   "name": "leet_code_75",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:nhlmg93/leet_code_75.git",
+  "description": "",
+  "main": "jest.config.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nathan Helmig <nhelmig93@gmail.com>",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhlmg93/leet_code_75.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhlmg93/leet_code_75/issues"
+  },
+  "homepage": "https://github.com/nhlmg93/leet_code_75#readme",
   "dependencies": {
-    "jest": "^28.1.0",
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.1"
   }
 }
