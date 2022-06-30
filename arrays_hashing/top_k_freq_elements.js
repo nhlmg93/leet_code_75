@@ -16,7 +16,6 @@ function top_k_freq_elements(nums, k){
             }
         }
     }
-    return []
 }
 
 console.log(top_k_freq_elements([1,1,1,2,2,2,1,1,3,3,3], 2))
