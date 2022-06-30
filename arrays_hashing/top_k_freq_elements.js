@@ -1,12 +1,10 @@
-function top_k_req_elements(nums, k){
+function top_k_freq_elements(nums, k){
     let count = {}
-    let freq=[]
-    let res =[]
+    let freq= new Array(nums.length).fill([])
+    let res = []
     nums.forEach(element => {
-        freq.push([])
         count[element] ? count[element] += 1 : count[element] = 1
     });
-    
     for(const [key, value] of Object.entries(count)){
         freq[value].push(key)
     }
@@ -18,6 +16,7 @@ function top_k_req_elements(nums, k){
             }
         }
     }
+    return []
 }
 
-console.log(top_k_req_elements([1,1,1,2,2,2,1,1], 1))
+console.log(top_k_freq_elements([1,1,1,2,2,2,1,1,3,3,3], 2))
